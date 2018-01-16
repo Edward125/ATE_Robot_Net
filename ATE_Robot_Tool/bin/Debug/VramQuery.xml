@@ -1,0 +1,100 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+VramQuery
+</name>
+</assembly>
+<members>
+<member name="P:VramQuery.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:VramQuery.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:VramQuery.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:VramQuery.DBS_42.OleDbType.BigInt">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.Binary">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.Boolean">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.BSTR">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.Char">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.Currency">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.Date">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.DBDate">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.DBTime">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.DBTimeStamp">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.Decimal">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.Double">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.Empty">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.Error">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.Filetime">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.Guid">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.IDispatch">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.Integer">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.IUnknown">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.LongVarBinary">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.LongVarChar">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.LongVarWChar">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.Numeric">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.PropVariant">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.Single">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.SmallInt">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.TinyInt">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.UnsignedBigInt">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.UnsignedInt">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.UnsignedSmallInt">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.UnsignedTinyInt">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.VarBinary">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.VarChar">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.Variant">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.VarNumeric">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.VarWChar">
+	<remarks/>
+</member><member name="F:VramQuery.DBS_42.OleDbType.WChar">
+	<remarks/>
+</member><member name="T:VramQuery.DBS_42.OleDbType">
+	<remarks/>
+</member>
+</members>
+</doc>

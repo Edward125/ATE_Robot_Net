@@ -1,0 +1,55 @@
+        Dim ws As DBS_42.DBConnectSoapClient = New DBS_42.DBConnectSoapClient  '定义TW DB
+        Dim SQLstr As String = String.Empty
+        Dim Mo_Str As String
+        On Error Resume Next
+
+        If Thd_VRAM_SN = "" Then Exit Sub
+
+        '先查詢SN的MO
+        SQLstr = "select mo from sfcpcb230.sfcusn where usn='" & Thd_VRAM_SN & "'"
+        Mo_Str = ws.ExecuteScalar(SQLstr)
+
+        Thd_VRAM_SMode = "Find_Mo"  '記錄查詢方式
+
+        '如果查詢工單號報錯,記錄查詢完成,清除Error退出
+        If Err.Number <> 0 Then
+            Thd_VRAM_Mat = "Error"
+            Thd_VRAM_St = True
+            Err.Clear()
+            Exit Sub
+        End If
+
+        '如果Mo為空付None,否則附新Mo
+        If Mo_Str = "" Then
+            Thd_SN_Mo = ""
+            Thd_VRAM_Mat = "None"
+            Thd_VRAM_St = True
+            Exit Sub
+        End If
+
+        '工單號相同使用上一次的VRAM料號記錄功能並退出
+        If Mo_Str = Thd_SN_Mo And Thd_VRAM_Mat <> "" And Thd_VRAM_Mat <> "Error" Then
+            Thd_VRAM_St = True
+            Exit Sub
+        End If
+
+        '如果查詢到的MO不同,並查詢對應VRAM料號
+        If Mo_Str <> Thd_SN_Mo Then
+            Thd_SN_Mo = Mo_Str
+
+            '通過SN查詢應的VRAM料號
+            SQLstr = "select a.cpn from sfcpcb230.VRAMmaterial a,"
+            SQLstr = SQLstr & "sfcpcb230.sfcerpmoitem b,sfcpcb230.sfcusn c where c.usn='"
+            SQLstr = SQLstr & Thd_VRAM_SN & "' and c.mo=b.mo and a.cpn=b.cpn"
+            Thd_VRAM_Mat = ws.ExecuteScalar(SQLstr)
+
+            Thd_VRAM_SMode = "Find_Mat"  '記錄查詢方式
+
+            '如果查詢有錯誤,記錄錯誤,清除錯誤並退出
+            If Err.Number <> 0 Then
+                Thd_VRAM_Mat = "Error"
+                Err.Clear()
+                Exit Sub
+            End If
+            Thd_VRAM_St = True
+        End If

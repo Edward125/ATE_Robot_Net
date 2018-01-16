@@ -1,0 +1,15 @@
+PLC Port:COM1
+Scannser one Port:COM7
+Scannser two Port:
+Scannser three Port:
+Scannser four Port:
+SN two Enabled:False
+SN three Enabled:False
+SN four Enabled:False
+SN one Enabled:False
+SN before:3
+SN check route Enabled:True
+SN before three code A:123
+SN before three code B:456
+SN length A:24
+SN length b:24
