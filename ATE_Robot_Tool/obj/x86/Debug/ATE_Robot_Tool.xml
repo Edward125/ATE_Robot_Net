@@ -6,20 +6,7 @@ ATE_Robot_Tool
 </name>
 </assembly>
 <members>
-<member name="P:ATE_Robot_Tool.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:ATE_Robot_Tool.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:ATE_Robot_Tool.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
-</member><member name="M:ATE_Robot_Tool.F721_Web.WebService.#ctor">
+<member name="M:ATE_Robot_Tool.F721_Web.WebService.#ctor">
 	<remarks/>
 </member><member name="E:ATE_Robot_Tool.F721_Web.WebService.GetScrapQualifyCompleted">
 	<remarks/>
@@ -4317,6 +4304,19 @@ ATE_Robot_Tool
 	<remarks/>
 </member><member name="T:ATE_Robot_Tool.F722_Web.clsWSConfig">
 	<remarks/>
+</member><member name="P:ATE_Robot_Tool.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ATE_Robot_Tool.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:ATE_Robot_Tool.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
 </member>
 </members>
 </doc>

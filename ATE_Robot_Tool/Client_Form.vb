@@ -593,7 +593,8 @@ On_Err:
     Private Sub Save_LogToFile()
         On Error GoTo On_Err
 
-        FileOpen(1, LP0 & Now.Year & "-" & Now.Month & "-" & Now.Day & "-Information.log", OpenMode.Append)
+        'FileOpen(1, LP0 & Now.Year & "-" & Now.Month & "-" & Now.Day & "-Information.log", OpenMode.Append)
+        FileOpen(1, Now.Year & "-" & Now.Month & "-" & Now.Day & "-Information.log", OpenMode.Append)
         For I = 0 To Show_Lst.Items.Count - 1
             PrintLine(1, Show_Lst.Items(I))
         Next I

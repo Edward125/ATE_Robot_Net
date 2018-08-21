@@ -274,7 +274,7 @@ Public Class Main_Form
     Dim SktSst As String = String.Empty
     Const ATE_LP As Short = 5101
     Dim ATE_LA As String
-    Dim ATE_LS As TcpListener
+    'Dim ATE_LS As TcpListener
     Dim L_Thd As Thread    '
     Dim T_Thd As Thread
     Dim C_Thd As Thread
@@ -282,6 +282,11 @@ Public Class Main_Form
     Dim CIP As String
     Delegate Sub Dg_Text(ByVal ValueRult As String, ByVal obj As TextBox)
     Delegate Sub Dg_Lst(ByVal ValueRult As String)
+
+    ''Fix error--Edward 2018-01-17
+    Private TcpLten As System.Net.Sockets.TcpListener
+    Private ATE_LS As Boolean
+    Private Link_Timer As Double
 
     Private Sub Thread_ChkRoute_MultiSN()
         Dim Get_Sn(4) As String
@@ -301,6 +306,7 @@ Public Class Main_Form
         If Ct_Var = "F722" Then
             Dim Web_Link722 As F722_Web.WebServiceSoapClient = New F722_Web.WebServiceSoapClient
             Get_Sn = Web_Link722.GetLinkUSN(Thd_Sn1, Get_Fb)
+
         End If
         If Err.Number <> 0 Or Get_Fb <> "OK" Then
             Thd_Sn1 = "Error"
@@ -844,7 +850,8 @@ Check_Route_End:
         Dim St_Mk As Short = 0
         Dim I As Integer
         Dim N As Integer
-        Dim SN_T As Integer
+        ' Dim SN_T As Integer
+        Dim SN_T As String 
         Dim MkA As Boolean
         On Error Resume Next
         If AxActProgType1.ReadDeviceBlock("D100", 9, PLC_Signal(0)) <> 0 Then

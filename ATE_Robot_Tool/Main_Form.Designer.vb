@@ -317,6 +317,7 @@ Partial Class Main_Form
         Me.PLC_RD_Lst.Cursor = System.Windows.Forms.Cursors.Default
         Me.PLC_RD_Lst.Enabled = False
         Me.PLC_RD_Lst.ForeColor = System.Drawing.SystemColors.WindowText
+        Me.PLC_RD_Lst.ItemHeight = 12
         Me.PLC_RD_Lst.Location = New System.Drawing.Point(9, 25)
         Me.PLC_RD_Lst.Name = "PLC_RD_Lst"
         Me.PLC_RD_Lst.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -342,9 +343,9 @@ Partial Class Main_Form
         '
         Me.St_Lab.Font = New System.Drawing.Font("新宋体", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.St_Lab.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.St_Panel1, Me.St_Panel2, Me.St_Panel3, Me.St_Panel4, Me.Err_Count_La})
-        Me.St_Lab.Location = New System.Drawing.Point(0, 453)
+        Me.St_Lab.Location = New System.Drawing.Point(0, 459)
         Me.St_Lab.Name = "St_Lab"
-        Me.St_Lab.Size = New System.Drawing.Size(696, 22)
+        Me.St_Lab.Size = New System.Drawing.Size(699, 22)
         Me.St_Lab.TabIndex = 47
         Me.St_Lab.Text = "St_Lab"
         '
@@ -1145,7 +1146,7 @@ Partial Class Main_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 11.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(696, 475)
+        Me.ClientSize = New System.Drawing.Size(699, 481)
         Me.Controls.Add(Me.Lock_Control_B)
         Me.Controls.Add(Me.ATE_DSt)
         Me.Controls.Add(Me.DST_Lab)
